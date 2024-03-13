@@ -1,0 +1,23 @@
+Water Jug Problem Solver
+
+This Python program utilizes breadth-first search to solve the Water Jug Problem. In this problem, there are two jugs with given capacities, and the objective is to measure a specific target volume of water using these jugs. The program explores all possible states and actions to find a sequence of steps that lead to the desired volume.
+
+Functionality:
+
+State Class: Defines a state representing the current volumes of water in the two jugs.
+
+water_jug_problem Function: Implements breadth-first search to explore possible states and actions. It generates next possible states based on various actions such as filling, emptying, or pouring water between the jugs.
+
+print_solution Function: Prints the sequence of steps taken to achieve the target volume, if found.
+
+Input: The user inputs the capacities of the two jugs and the target volume to be measured.
+
+Usage:
+
+After providing the capacities and target volume, the program will execute and display the sequence of steps required to measure the target volume using the given jugs.
+
+Example:
+
+If the user enters the capacities of Jug 1 and Jug 2 as 4 and 3 respectively, and the target volume as 2, the program will output the steps necessary to measure 2 units of water using the provided jugs.
+
+This program demonstrates the application of breadth-first search to solve the Water Jug Problem, providing an efficient solution for measuring target volumes using given jug capacities.

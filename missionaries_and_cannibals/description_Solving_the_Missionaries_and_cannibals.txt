@@ -1,0 +1,30 @@
+Title: Solving the Missionaries and Cannibals Problem with Depth-First Search
+
+Description:
+
+The provided Python code presents a solution to the classic Missionaries and Cannibals problem using a depth-first search (DFS) algorithm. This problem involves transporting three missionaries and three cannibals from the left bank of a river to the right bank using a boat, ensuring that the cannibals never outnumber the missionaries on either side of the river at any time. The boat can carry a maximum of two passengers.
+
+Components:
+
+State Class:
+
+Represents the state of the problem, including the number of missionaries and cannibals on each side of the river and the position of the boat.
+Defines methods for checking validity, equality, hashing, and string representation of states.
+get_successors Function:
+
+Generates successor states based on the current state, representing possible moves of the boat.
+Ensures that generated states are valid according to the problem constraints.
+dfs Function:
+
+Performs depth-first search recursively to explore possible states until a solution is found or all states are exhausted.
+Prints each state visited during the search process.
+solve Function:
+
+Initializes the problem with an initial state and initiates the DFS search.
+Returns True if a solution is found, otherwise False.
+Usage:
+
+The code can be executed to find a solution to the Missionaries and Cannibals problem.
+It prints each state visited during the search process and indicates whether a solution exists.
+Conclusion:
+By leveraging a depth-first search algorithm, the provided Python code efficiently navigates through the state space of the Missionaries and Cannibals problem, determining whether a valid solution exists. This implementation demonstrates the effectiveness of DFS in solving constraint satisfaction problems and highlights its application in real-world scenarios.

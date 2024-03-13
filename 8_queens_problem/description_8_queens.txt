@@ -1,0 +1,26 @@
+
+N-Queens Problem Solver
+
+This Python program solves the N-Queens problem, a classic combinatorial problem where the objective is to place N queens on an N×N chessboard in such a way that no two queens threaten each other. In chess, a queen can move horizontally, vertically, and diagonally across the board.
+
+Functionality:
+
+is_safe(board, row, col): This function checks whether it is safe to place a queen at a given position (row, col) on the chessboard. It checks if there are any queens in the same row, same column, or diagonals that threaten the current position.
+
+solve_n_queens_util(board, col): This function is a recursive utility function that solves the N-Queens problem using backtracking. It tries to place queens column-wise and recursively explores possible placements until a solution is found.
+
+solve_n_queens(): This function initializes the chessboard and starts the solving process by calling solve_n_queens_util. If a solution is found, it prints the chessboard configuration; otherwise, it indicates that no solution exists.
+
+print_solution(board): This function prints the chessboard configuration, showing the positions of queens (denoted by "Q") and empty spaces (denoted by ".")
+
+Input: The user is prompted to enter the number of possible arrangements they want to see. For each arrangement, the program generates and displays a solution.
+
+Usage:
+
+The user can run the program and input the number of solutions they want to see. The program will then generate and display the N-Queens solutions accordingly.
+
+Example:
+
+If the user enters 1 for the number of arrangements they want to see, the program will display one valid solution for the N-Queens problem on an 8×8 chessboard.
+
+This program showcases the application of backtracking to solve a classic combinatorial problem and provides a visualization of solutions to the N-Queens problem.

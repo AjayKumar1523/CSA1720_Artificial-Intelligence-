@@ -1,0 +1,29 @@
+Cryptarithmetic Puzzle Solver
+
+This Python program solves cryptarithmetic puzzles, where letters are replaced with digits to form a valid mathematical equation. The program takes an array of words representing operands and a target word representing the sum. It then systematically explores all possible mappings of letters to digits to find a solution.
+
+Approach:
+
+The program encodes strings into numeric representations based on the given mappings of letters to digits.
+It generates all possible permutations of digits and checks if the equation holds true for any permutation.
+Utilizing a brute-force approach, the program iterates through all possible permutations to find a valid mapping that satisfies the equation.
+Key Functions:
+
+encode_string(string, char_to_num): Encodes a string into a numeric representation based on the given mapping of letters to digits.
+is_mapping_possible(arr, S): Checks if a valid mapping exists for the given array of words and target word.
+Example:
+
+For the puzzle "SEND + MORE = MONEY", each letter is represented by a unique digit, and the program finds a valid mapping that satisfies the equation.
+Conclusion:
+Cryptarithmetic puzzles challenge logical reasoning and systematic exploration. This program, leveraging Python's itertools and brute-force techniques, efficiently tackles these puzzles and provides solutions.
+
+Usage:
+
+Users can input cryptarithmetic puzzles as arrays of words and a target word. The program then generates mappings of letters to digits to solve the puzzle.
+This program serves as a useful tool for solving cryptarithmetic puzzles and demonstrates the power of Python in tackling such challenges.
+
+
+
+
+
+

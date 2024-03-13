@@ -1,0 +1,30 @@
+Title: Solving the Travelling Salesman Problem (TSP) Using Brute Force
+
+Description:
+
+The provided Python code implements a brute-force solution to the Travelling Salesman Problem (TSP). The TSP involves finding the shortest possible route that visits each city exactly once and returns to the origin city. The code allows users to input the distance matrix for a given set of cities and computes the minimum path weight using brute-force permutation of all possible city visit sequences.
+
+Key Components:
+
+travellingSalesmanProblem Function:
+
+Implements the brute-force approach to solve the TSP.
+Iterates through all possible permutations of city visit sequences.
+Calculates the total path weight for each permutation and updates the minimum path weight found so far.
+get_integer_input Function:
+
+Utility function to handle user input for integer values.
+Ensures that the input is valid before returning the value.
+Main Execution Logic:
+
+Prompts the user to input the number of cities and the distance matrix representing the graph.
+Initiates the TSP solution process by calling the travellingSalesmanProblem function with the provided input.
+Displays the minimum path weight computed for the TSP instance.
+Example Usage:
+
+User inputs the number of cities and the distance matrix representing the graph.
+The code computes the minimum path weight for the TSP instance using brute-force permutation.
+The minimum path weight is displayed as the output.
+Conclusion:
+
+This Python code provides a simple yet effective brute-force solution to the Travelling Salesman Problem. While brute force is not efficient for large problem instances due to its exponential time complexity, it serves as a baseline approach for small-scale TSP instances. This code can be further optimized using dynamic programming or heuristic algorithms for larger TSP instances.

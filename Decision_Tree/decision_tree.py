@@ -1,21 +1,20 @@
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
-
-iris = load_iris()
-X = iris.data
-y = iris.target
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-
+from sklearn.tree import DecisionTreeClassifier, export_text
+from sklearn.preprocessing import LabelEncoder
+outlook = ['sunny', 'sunny', 'overcast', 'rainy', 'rainy', 'rainy', 'overcast', 'sunny', 'sunny', 'rainy', 'sunny', 'overcast', 'overcast', 'rainy']
+temperature = ['hot', 'hot', 'hot', 'mild', 'cool', 'cool', 'cool', 'mild', 'cool', 'mild', 'mild', 'mild', 'hot', 'mild']
+humidity = ['high', 'high', 'high', 'high', 'normal', 'normal', 'normal', 'high', 'normal', 'normal', 'normal', 'high', 'normal', 'high']
+wind = ['weak', 'strong', 'weak', 'weak', 'weak', 'strong', 'strong', 'weak', 'weak', 'weak', 'strong', 'strong', 'weak', 'strong']
+play = ['no', 'no', 'yes', 'yes', 'yes', 'no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes', 'no']
+le_outlook = LabelEncoder()
+le_temperature = LabelEncoder()
+le_humidity = LabelEncoder()
+le_wind = LabelEncoder()
+outlook_encoded = le_outlook.fit_transform(outlook)
+temperature_encoded = le_temperature.fit_transform(temperature)
+humidity_encoded = le_humidity.fit_transform(humidity)
+wind_encoded = le_wind.fit_transform(wind)
+features = list(zip(outlook_encoded, temperature_encoded, humidity_encoded, wind_encoded))
 clf = DecisionTreeClassifier()
-
-clf.fit(X_train, y_train)
-
-y_pred = clf.predict(X_test)
-
-
-accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
+clf = clf.fit(features, play)
+tree_rules = export_text(clf, feature_names=['Outlook', 'Temperature', 'Humidity', 'Wind'])
+print(tree_rules)

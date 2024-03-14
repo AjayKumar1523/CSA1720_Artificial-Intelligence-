@@ -1,0 +1,12 @@
+This program demonstrates how to implement a Decision Tree classifier using scikit-learn, a popular machine learning library in Python.
+
+We first load the Iris dataset, a well-known dataset for classification tasks.
+Next, we split the dataset into training and testing sets using the train_test_split function from scikit-learn.
+We then create a Decision Tree classifier using the DecisionTreeClassifier class.
+We train the Decision Tree classifier on the training data using the fit method.
+After training, we make predictions on the testing set using the predict method.
+Finally, we evaluate the performance of the classifier by calculating the accuracy score using the accuracy_score function from scikit-learn.
+Decision Trees are versatile and interpretable models used for both classification and regression tasks. They work by recursively partitioning the 
+  feature space into regions, based on the feature values, to make predictions. The decision tree splits the dataset into branches based on the feature 
+    that provides the most significant information gain at each node. This process continues recursively until a stopping criterion is met, 
+such as reaching a maximum depth or having minimum samples per leaf.

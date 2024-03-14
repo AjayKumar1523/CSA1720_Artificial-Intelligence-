@@ -1,0 +1,10 @@
+This Python code defines a class Graph for representing a graph using an adjacency list and provides methods to 
+perform depth-first search (DFS) traversal starting from a specified vertex. 
+It also includes functions to convert between alphabets and integers, assuming vertices are labeled with alphabets.
+
+The Graph class has methods to add edges between vertices and to perform DFS traversal. 
+The DFS traversal starts from a given vertex and visits all vertices reachable from it, recording the traversal sequence.
+
+The program takes user input to construct the graph by specifying the number of edges and the vertices and their neighbors. 
+It then prompts the user to enter a starting vertex for the DFS traversal. After the traversal is performed, 
+it converts the integer representation of vertices back to alphabets for readability and prints the DFS traversal sequence.

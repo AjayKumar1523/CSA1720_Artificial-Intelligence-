@@ -1,0 +1,13 @@
+Description:
+This Python program implements the classic Tic Tac Toe game where two players take turns marking empty squares in a 3x3 grid with their respective symbols ('X' or 'O'). 
+  The first player to align three of their symbols horizontally, vertically, or diagonally wins the game. 
+  If all squares are filled and no player has aligned three symbols, the game ends in a tie.
+
+The game logic is encapsulated within the TicTacToe class, which handles the game board, available moves, checking for a winner, and making moves.
+
+Players are represented by the HumanPlayer and RandomComputerPlayer classes, allowing for human vs. computer or computer vs. computer gameplay.
+  The HumanPlayer class prompts the user for input to make a move, while the RandomComputerPlayer class randomly selects an available move.
+
+The play function orchestrates the gameplay, alternating between players until a winner is determined or the game ends in a tie.
+
+The program can be run directly, allowing users to play against the computer, with moves and game status displayed in the console.

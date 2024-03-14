@@ -1,0 +1,24 @@
+The FeedForwardNN class represents the neural network. It has attributes for input size, hidden layer size, and output size. During initialization, 
+random weights and biases are assigned to connections between input-hidden and hidden-output layers.
+
+The sigmoid function implements the sigmoid activation function, which is used to introduce non-linearity into the network.
+
+The forward method performs the forward pass of the neural network. It takes input data, computes the dot product of input-hidden layer weights and adds hidden layer biases, 
+applies the sigmoid activation function to obtain hidden layer output, then computes the dot product of hidden-output layer weights and adds output layer biases, 
+and finally applies sigmoid activation to produce the output.
+
+An instance of FeedForwardNN is created with specified input, hidden, and output layer sizes.
+
+Input data is defined as a NumPy array with four samples, each having two features.
+
+The forward method is called with the input data to compute the output of the neural network.
+
+The output of the network is printed.
+
+Overall, this code demonstrates the construction and forward pass computation of a simple feedforward neural network. 
+  It's a basic example to understand the concept of feedforward neural networks and their implementation using Python and NumPy.
+
+
+
+
+

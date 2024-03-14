@@ -1,0 +1,14 @@
+Description:
+This Python program implements the A* algorithm for pathfinding in a graph. 
+  The Graph class represents the graph structure and includes a method a_star to find the shortest path from a start vertex to a goal vertex using the A* algorithm.
+
+The A* algorithm maintains two sets: 
+  open_set and closed_set. It explores nodes from the open_set, considering the cost from the start node (g_score) 
+  and the heuristic estimate to the goal node (f_score). It selects the node with the lowest f_score for exploration.
+
+The heuristic function provides an estimate of the cost from the current node to the goal node. In this example, 
+  a simple heuristic function is used, but it can be replaced with a more appropriate one depending on the problem domain.
+
+The program demonstrates the usage of the Graph class by creating a graph, 
+  adding edges, and finding the shortest path from a start vertex to a goal vertex. 
+  Finally, it prints the resulting path.

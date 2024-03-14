@@ -1,0 +1,15 @@
+Description:
+
+This Python program implements the Alpha-Beta Pruning algorithm for a Tic Tac Toe game where the computer plays against the player. 
+  The Alpha-Beta Pruning algorithm is an optimization technique for the Minimax algorithm, which reduces the number of nodes evaluated in 
+  the search tree by eliminating branches that are guaranteed not to affect the final decision.
+
+The program defines players as X and O, represents an empty space on the board as -, and includes winning combinations to check for a winner.
+
+The alpha_beta_pruning function recursively evaluates all possible moves using the Alpha-Beta Pruning algorithm. 
+  It returns the best score for the maximizing player (X) and the worst score for the minimizing player (O).
+
+The best_move function finds the best move for the computer using the Alpha-Beta Pruning algorithm.
+
+The main function allows the player to make moves and plays against the computer. 
+  The computer uses the Alpha-Beta Pruning algorithm to determine its moves.

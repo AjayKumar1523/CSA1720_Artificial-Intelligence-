@@ -1,0 +1,18 @@
+Description:
+This Python program implements the Minimax algorithm for a Tic Tac Toe game against a computer opponent. 
+  The Minimax algorithm is a decision-making algorithm used in two-player turn-based games to determine the optimal move for the current player.
+
+The minimax function recursively explores all possible game states up to a certain depth, evaluating each states utility (score) to determine the best possible move. 
+  It assumes both players play optimally, with the maximizing player trying to maximize the score and the minimizing player trying to minimize it.
+
+The check_winner function checks if there is a winner in the current board state or if the game is still ongoing. 
+  The get_best_move function uses the minimax algorithm to find the best move for the computer player.
+
+The program allows the user to play against the computer. After each move, the program checks for a winner or a tie and prints the current state of the board. 
+  If the user enters an invalid move, the program prompts for input again.
+
+
+
+
+
+

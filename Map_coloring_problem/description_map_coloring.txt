@@ -1,0 +1,16 @@
+Description:
+This Python program implements the Map Coloring problem using the Constraint Satisfaction Problem (CSP) approach. 
+In this problem, a map is represented as a graph where regions (vertices) are connected by borders (edges), 
+and the goal is to assign colors to each region such that no two adjacent regions have the same color.
+
+The CSP class represents the Constraint Satisfaction Problem, where variables are the regions to be colored, 
+domains represent the possible colors for each region, and constraints define the adjacency relationships between regions.
+
+The is_consistent method checks if assigning a value to a variable is consistent with the current assignment based on the constraints.
+
+The backtrack_search method recursively searches for a solution by assigning values to variables and backtracking when a conflict is encountered. 
+It returns the assignment that satisfies all constraints.
+
+In the example usage, a map with regions 'WA', 'NT', 'SA', 'Q', 'NSW', 'V', and 'T' is defined along with their domains (possible colors) and adjacency constraints. 
+An instance of CSP is created with this information, and the backtrack_search method is called to find a solution. 
+Finally, the solution (a valid coloring of the map) is printed.
